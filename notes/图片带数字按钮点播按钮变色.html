@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/light.css">
+	<style>
+		li{
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+			float: left;
+			border:1px solid #aaa;
+			cursor:pointer;
+			list-style: none;
+
+		}
+	</style>
+	
+</head>
+<body>
+	<img class="pic" src="../images/1.jpg" alt="" >
+	<ul class="btn">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	<span>
+		<br>
+		<br>
+		<strong>代码：</strong><br>
+		$(".btn li").click(function(){<br>
+			var ind = $(this).index();<br>
+			var src = "../images/" + (ind+1) + ".jpg";<br>
+			$(".pic").attr("src",src);<br>
+			$(this).css("background-color","red").siblings().css("background-color","#fff")<br>
+		})<br>
+		<strong>用index改变img的src；用attr改css的src为红色siblings改变其他子集css为白色</strong>
+	</span>
+	<!-- 呼吸灯 -->
+	<div class="light"><a href="../index.html" class="light-a">首页</a></div>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(".btn li").click(function(){
+			var ind = $(this).index();
+			var src = "../images/" + (ind+1) + ".jpg";
+			$(".pic").attr("src",src);
+			$(this).css("background-color","red").siblings().css("background-color","#fff")
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/light.css">
+</head>
+<body>
+<!-- 呼吸灯 -->
+	<div class="light"><a href="../index.html" class="light-a">首页</a></div>
+	<span>5</span><p>秒后跳转到百度</p>
+	<script src="../js/jquery.js"></script>
+	<script>
+		var n = 4;
+		function funn(){
+			$("span").text(n);
+			n--;
+			if(n == 0){
+				location.href = "http://baidu.com"
+			}
+		}
+		setInterval(funn,1000);
+
+		// function fun(){
+		// 	window.location.href="http://www.baidu.com";
+		// }
+		// setTimeout(fun,5000);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/light.css">
+	<style>
+		.wrap{
+			width: 700px;
+			height: 200px;
+			margin: 0 auto;
+			border:1px solid red;
+		}
+		.btn-Q{
+			background-color: red;
+		}
+		.btn-W{
+			background-color: yellow;
+		}
+		.btn-E{
+			background-color: orange;
+		}
+		.btn-R{
+			background-color: green;
+		}
+		.btn-T{
+			background-color: blue;
+		}
+		.btn-Y{
+			background-color: purple;
+		}
+		.btn-U{
+			background-color: #831;
+		}
+		.btn{
+			float: left;
+			width: 100px;
+			height: 200px;
+			color: #fff;
+			text-align: center;
+			line-height: 300px;
+			font-size: 50px;
+			font-family: "黑体";
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="btn-Q btn">1</div>
+		<div class="btn-W btn">2</div>
+		<div class="btn-E btn">3</div>
+		<div class="btn-R btn">4</div>
+		<div class="btn-T btn">5</div>
+		<div class="btn-Y btn">6</div>
+		<div class="btn-U btn">7</div>
+	</div>
+	<div class="light"><a href="../index.html" class="light-a">首页</a></div>
+	<script type="text/javascript" src="../js/jquery-1.11.1.js">q</script>
+	<script type="text/javascript">
+		$(window).ready(function(){
+			
+			var audioSrc = ""
+			var musicDate = [
+				{key:"1",src:"source/yinjie/01.mp3"},
+				{key:"2",src:"source/yinjie/02.mp3"},
+				{key:"3",src:"source/yinjie/03.mp3"},
+				{key:"4",src:"source/yinjie/04.mp3"},
+				{key:"5",src:"source/yinjie/05.mp3"},
+				{key:"6",src:"source/yinjie/06.mp3"},
+				{key:"7",src:"source/yinjie/07.mp3"}
+			]
+			// 这是一个jason
+			
+			$(window).keydown(function(event){
+				for (var i = 0; i < musicDate.length; i++) {
+					
+				
+				var keyChar = String.fromCharCode(event.keyCode)
+				if (musicDate[i].key == keyChar) {
+					var AUDIO = new Audio();
+					AUDIO.src = musicDate[i].src;
+					AUDIO.play();
+				};
+			};
+			})
+		})
+	</script>
+</body>
+</html>

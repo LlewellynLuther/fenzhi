@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/light.css">
+	<title>canvas圆</title>
+	<style>
+		html,body{
+			margin: 0;
+			background-color: gray;
+		}
+		.box{
+			width: 800px;
+			height: 600px;
+			margin: 10px auto;
+		}
+		#myCanvas{
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<canvas id="myCanvas" width="800" height="600"></canvas>
+	</div>
+	<div class="light"><a href="../index.html" class="light-a">首页</a></div>
+	<script>
+		function pos1(ctx,ball,ball2){
+			ctx.clearRect(0,0,800,600);
+			ctx.beginPath();
+			ctx.arc(ball.x,ball.y,ball.r,0,2*Math.PI);
+			ctx.arc(ball2.x,ball2.y,ball2.r,0,2*Math.PI);
+			ctx.fillStyle = ball.color;
+			ctx.fillStyle = ball2.color;
+			ctx.fill();
+			ctx.closePath();
+		}
+		// function pos2(ctx,ball2){
+		// 	ctx.clearRect(0,0,800,600);
+		// 	ctx.beginPath();
+		// 	ctx.arc(ball2.x,ball2.y,ball2.r,0,2*Math.PI);
+		// 	ctx.fillStyle = ball2.color;
+		// 	ctx.fill();
+		// 	ctx.closePath();
+		// }
+		window.onload=function(){
+			var myCanvas = document.getElementById("myCanvas");
+			var ctx = myCanvas.getContext("2d");			
+			var ball = {
+				"x":80,
+				"y":200,
+				"r":30,
+				"color":"red",
+				"vx":7,
+				"vy":5
+			}
+			var ball2 = {
+				"x":200,
+				"y":200,
+				"r":30,
+				"color":"red",
+				"vx":5,
+				"vy":0
+			}
+			setInterval(function(){
+				ball.x=ball.x+ball.vx;
+				pos1(ctx,ball,ball2);
+				if(ball.x+ball.r>=800){
+					ball.vx=-ball.vx;
+				}
+				if(ball.x-ball.r<=0){
+					ball.vx=-ball.vx;
+				}
+
+				ball2.x=ball2.x+ball2.vx;
+				if(ball2.x+ball2.r>=800){
+					ball2.vx=-ball2.vx;
+				}
+				if(ball2.x-ball2.r<=0){
+					ball2.vx=-ball2.vx;
+				}
+			},60)
+			setInterval(function(){
+				ball.y=ball.y+ball.vy;
+				pos1(ctx,ball,ball2);
+				if(ball.y+ball.r>=600){
+					ball.vy=-ball.vy;
+				}
+				if(ball.y-ball.r<=0){
+					ball.vy=-ball.vy;
+				}
+
+				ball2.y=ball2.y+ball2.vy;
+				if(ball2.y+ball2.r>=600){
+					ball2.vy=-ball2.vy;
+				}
+				if(ball2.y-ball2.r<=0){
+					ball2.vy=-ball2.vy;
+				}
+			},60)
+			pos1(ctx,ball,ball2);
+			// pos2(ctx,ball2);
+		}
+
+	</script>
+</body>
+</html>

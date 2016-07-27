@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景自适应</title>
+	<link rel="stylesheet" href="css/light.css">
+		<style>
+			*{
+				margin: 0px;
+
+				padding: 0px;/*初始化*/			
+			}
+			#top{
+				height: 20px;
+				background-color: black;/*top的颜色*/
+			}
+			#header{
+				height: 114px;
+				
+				
+			}
+			.header_inner{
+				width: 914px;
+				height: 114px;
+				margin: 0 auto;
+				/*background-color: green;*/
+				/*float:left;*/
+			}
+			.logo{
+				width: 457px;
+				height: 114px;
+				color: #a72b05;
+				line-height: 114px;
+				float:left;
+			
+				
+			}
+			.nav{
+				width:  457px;
+				height: 21px;
+				margin-top: 48px;
+				float:left;
+
+
+			}
+			.nav ul li{
+				list-style: none;
+				float: left;
+				padding-left: 25px;
+				list-style: none;
+				color: black;
+				font-family: arial;
+
+			}
+
+			.nav ul li a{
+				
+				padding-bottom: 10px;						
+				color:black;								/*字体为黑色*/
+				float: left;
+				text-decoration: none;						/*去掉下划线*/
+				font-family: arial;			
+
+			}
+			.nav ul li a:hover{								 /*重点*/
+				border-bottom: 1px red solid;
+				color:red;
+				
+			}
+			#banner{
+				height: 270px;
+				background-image: url(images2/images-Web/02.jpg);
+			}
+			.banner_inner{
+				width:  914px;
+				height: 270px;
+				margin: 0 auto;
+				background-image: url(images2/images-Web/02.jpg);
+			}
+			.banner_left{
+				width:  457px;
+				height: 226px;
+				float:left;
+				line-height: 21px;
+				font-size: 11px;
+			}
+			.banner_left span{
+				border-bottom: 1px dotted #e9eda1;
+			}
+			.banner_left h2{
+				font-size: 23px;
+				color: #e9eda1;
+				padding: 38px 0 25px 0;
+				font-family: arial;	
+			}
+			.banner_left p{
+				font-size: 14px;
+				color: #bfdfdc;
+				font-family: arial;
+			}
+			.banner_left_down{
+				width:  468px;
+				height: 44px;
+				background-image: url(images2/images-Web/Web-Application_03.jpg);
+				float:left;
+
+				
+			}
+			.banner_right{
+				width:  457px;
+				height: 210px;
+				margin-top: 4px;
+				float:right;
+				/*background-image: url(images/Web-Application_11.jpg)*/
+
+			}
+			
+			#main{
+				
+				height: 296px;
+			}
+			.main_inner{
+				width:  914px;
+				height: 296px;
+				margin: 0 auto;
+				background-color: #fff;
+				line-height: 21px;
+				font-size: 11px;
+				
+			}
+			.pic{
+				position:absolute;
+				right: 219px;
+				top:124px;
+			}
+
+			#main p{
+				font-family: arial;
+			}
+			.main_left{
+				width:  272px;
+				height: 258px;
+				padding:38px 16px 0 16px;
+				background-color: #fff;
+				float:left;
+			}
+			.main_left h2 span{
+				color:#a72b05;
+				font-family: arial;
+			}
+			
+			.main_mid{
+				width:  272px;
+				height: 258px;
+				padding:38px 16px 0 16px;
+				background-color: #fff;
+				float:left;
+			}
+			.main_mid h2 span{
+				color:#a72b05;
+				font-family: arial;
+			}
+			.main_right{
+				width:  272px;
+				height: 258px;
+				padding:38px 16px 0 16px;
+				background-color: #fff;
+				float:left;
+			}
+			.main_right h2 span{
+				color:#a72b05;
+				font-family: arial;
+			}
+			#footer{
+				
+				height: 76px;
+				
+			}
+			.footer_inner{
+				height: 76px;
+				width: 914px;
+				margin: 0 auto;
+
+			}
+			.footer_left{
+				width:  850px;
+				height: 76px;
+				line-height: 76px;
+				
+				font-size: 11px;
+			}
+			.footer_left p span{
+				border-bottom: 1px solid #989898;
+				color:#989898;
+
+			}
+			.footer_left_1{
+				float:left;
+				height: 76px;
+				width: 264px;
+				
+			}
+			.footer_left_2{
+				float:right;
+				height: 76px;
+				width: 240px;
+					
+			}
+			
+			.footer_right{
+				width:  50px;
+				height: 30px;
+				float:right;
+				background-image: url(images2/images-Web/09.jpg);
+				background-repeat: no-repeat;
+				position: relative;
+				top:-50px;
+				left: 
+				
+			}
+
+		</style>
+</head>
+<body>
+	<div id="top">
+		<div class="top_inner"></div>
+	</div>
+	<div id="header">
+		<div class="header_inner">
+			<div class="logo">
+				<h1>Web Application</h1>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#"><strong>about application</strong></a></li>
+					<li><a href="#"><strong>register</strong></a></li>
+					<li><a href="#"><strong>demo</strong></a></li>
+					<li><a href="#"><strong>help</strong></a></li>
+					<li><a href="#"><strong>contact</strong></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		<div class="banner_inner">
+			
+			<div class="banner_left">
+				<h2>Welcome to <span><em>Web Application</em></span></h2>
+				<p>
+					The World's Great est Swordsman Atanex hibitio noft heworld'sbests wordsman,thethird-p lac efe ncert oo kthes tage.A flywas rele ased,and withanar cofhissw ordhec utthefl yin half.The crowd cheered.Then the second-placemansl
+				</p>
+				
+			</div>
+			
+			<div class="banner_right"></div>
+			<div class="pic">
+				<img src="images2/images-Web/3_03.png" alt="">
+			</div>
+			<div class="banner_left_down"></div>
+			
+		</div>
+
+	</div>
+
+	<div id="main">
+		<div class="main_inner">
+			<div class="main_left">
+				<h2>What's <span>New</span></h2>
+				<p>The World's Great estSwordsman Atanex hibitio noft heworld'sbestswordsman,thethird-p lac efe ncert oo kthes tage.A flywas rele ased,andwithanar cofhissw ordhec utthefl yin half.Th ecrowd cheered.Thenthesecond-placemansl</p>
+			</div>
+			<div class="main_mid">
+				<h2>User <span>statistics</span></h2>
+				<p>TheWorld'sGreat estSwordsman Atanex hibitio noft heworld'sbestswordsman,thethird-p lac efe ncert oo kthes tage.A flywas rele ased,andwithanar cofhissw ordhec utthefl yin half.Th ecrowd cheered.Thenthesecond-placemansl</p>
+			</div>
+			<div class="main_right">
+				<h2>About <span>Web Application</span></h2>
+				<p>TheWorld'sGreat estSwordsman Atanex hibitio noft heworld'sbestswordsman,thethird-p lac efe ncert oo kthes tage.A flywas rele ased,andwithanar cofhissw ordhec utthefl yin half.Th ecrowd cheered.Thenthesecond-placemansl</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer_inner">
+			<div class="footer_left">
+				<p class="footer_left_1">Copyright 2007 <span>Web Application</span>·All Reserved</p>
+				<p class="footer_left_2"><span>Design:Luca Cvrk</span>·Spansor:<span>Credit Cards</span></p>
+			</div>
+			<div class="footer_right"></div>
+		</div>
+	</div>
+	<!-- 呼吸灯 -->
+	<div class="light"><a href="index.html" class="light-a">首页</a></div>
+</body>
+</html>

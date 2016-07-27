@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/light.css">
+	<style>
+		*{margin: 0;padding: 0;}
+		.bbox{
+			width: 198px;
+			height: 198px;
+			overflow: hidden;
+			border:1px solid #000;
+		}
+		.box{
+			width: 1000px;
+			height: 200px;
+		}
+		li{
+			list-style: none;
+			float: left;
+			display: block;
+			width: 20px;
+			height: 20px;
+			text-align: center;
+			line-height: 20px;
+			border:1px solid #000;
+			margin-left: 14px;
+		}
+		.img{float: left;}
+		.action{background-color: red;}
+	</style>
+</head>
+<body>
+	<div class="bbox">
+		<div class="box">
+			<img src="../images/1.jpg" alt="" class="img">
+			<img src="../images/2.jpg" alt="" class="img">
+			<img src="../images/3.jpg" alt="" class="img">
+			<img src="../images/4.jpg" alt="" class="img">
+			<img src="../images/5.jpg" alt="" class="img">
+			
+		</div>
+	</div>
+	<ul>
+		<li class="action">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	<!-- 呼吸灯 -->
+	<div class="light"><a href="../index.html" class="light-a">首页</a></div>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$("li").click(function(){
+			var ind = $(this).index();
+			var left = -200 * ind;
+			$(".box").animate({"margin-left":left},500);
+		})
+
+			var n = 0;
+		function fun(){
+			n++;
+			var left = n*-200;
+			$(".box").animate({"margin-left":left},500);
+			if(n == 4){				
+
+				n=-1;
+				
+			}$("li").eq(n).addClass("action").siblings().removeClass("action");
+		}
+		setInterval(fun,1000);
+
+	</script>
+</body>
+</html>

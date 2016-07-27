@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/light.css">
+	<style>
+		*{margin: 0;padding: 0;}
+		.box img{width: 50px;height: 50px;}
+		.pic{position: absolute;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="../images/1.jpg" alt="">
+		<img src="../images/2.jpg" alt="">
+		<img src="../images/3.jpg" alt="">
+		<img src="../images/11.jpg" alt="">
+		<img src="../images/12.jpg" alt="">
+		<img src="../images/13.jpg" alt="">
+		<img src="../images/14.jpg" alt="">
+		<img src="../images/15.jpg" alt="">
+		<img src="../images/20.jpg" alt="">
+		<img src="../images/17.jpg" alt="">
+		<img src="../images/19.jpg" alt="">
+	</div>
+	<div class="pic"></div>
+	<div class="light"><a href="../index.html" class="light-a">首页</a></div>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(".box img").mouseenter(function(){
+			var src = $(this).attr("src");
+			// var img = '<img src="' + src + '">';
+			var img = $("<img>");
+			//创建一个新标签
+			img.attr("src",src);
+
+			$(".pic").append(img);
+		}).mousemove(function(event){
+			var x = event.pageX;
+			var y = event.pageY;
+			$(".pic").css({"top":y+10,"left":x+10})
+			// $(".pic").css("top",y+10).css("left",x+10)
+		}).mouseleave(function(){
+			$(".pic img").remove();
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #000;
+}
+	#video{
+		width: 100%;
+		// position: absolute;
+	}
+    // background-color: rgba(10, 47, 92, 0.2);
+
+
+// 头
+	#top{
+		width: 100%;
+	}
+	.top-inner{
+		width: 86%;
+		margin: 0 auto;
+	}
+	.top-inner .nav{
+		width: 86%;
+		position: fixed;
+		top:-1px;
+	}
+	.nav-box{
+		width: 24.7%;
+		height: 40px;
+		overflow: hidden;
+		float: left;
+		border:1px solid #000;
+	}
+	.nav-box p{
+		line-height: 40px;
+		text-align: center;
+		display: block;
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+	.nav-a{
+		line-height: 40px;
+		text-align: center;
+		display: block;
+		text-decoration: none;
+		color: #000;
+		background-color: rgba(255, 255, 255, 0.6);
+
+	}
+	// 边栏导航
+	// .adjacency-nav{
+
+	// }
+	// .snow{
+
+	// }
+	// 分割
+	.interval{
+		width: 100%;
+		height: 20px;
+		background-color: blue;
+	}
+
+// 主体
+	#main{
+		width: 100%;
+
+	}
+	.main-inner{
+		width: 86%;
+		height: 2000px;
+		margin: 0 auto;
+
+	}
+	// 作品
+	
+	// 笔记
+
+	// 照片墙
+	.photo-wall{
+		// float: left;
+		// position: absolute;
+		// top:2000px;
+	}
+
+// 末尾
+	#footer{
+		width: 100%;
+	}
+	.footer-inner{
+		width: 86%;
+		margin: 0 auto;
+	}
+	.translated{
+
+	}
+	.social-contact{
+
+	}

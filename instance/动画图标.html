@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/light.css">
+<title>动画图标</title>
+<style>
+
+ @keyframes Disk1{
+  
+   0%{opacity:0;}
+   32%{opacity:1;}
+   64%{opacity:1;}
+   96%{opacity:1;}
+   100%{opacity:1;}
+ }
+
+  @keyframes Disk2{
+   0%{opacity:0;}
+   32%{opacity:0;}
+   64%{opacity:1;}
+   96%{opacity:1;}
+   100%{opacity:1;}
+ }
+
+  @keyframes Disk3{
+   0%{opacity:0;}
+   32%{opacity:0;}
+   64%{opacity:0;}
+   96%{opacity:1;}
+   100%{opacity:1;}
+ }
+
+
+  .icoBox{background-color: #38b8e8;
+    width:260px;height:260px;
+    position: relative;
+
+  }
+
+  .disk-step{position: absolute;}
+  .disk-step1{opacity:0;left:78px;top:40px;z-index:10;
+  animation-name:Disk1;  /*动画名*/
+  animation-duration:3s;/*动画时间*/
+  animation-iteration-count:infinite;/*动画无限循环*/
+  animation-timing-function:linear;/*动画类型*/
+  }
+  .disk-step2{opacity:0;left:78px;top:54px;z-index:9;
+ animation-name:Disk2;  /*动画名*/
+  animation-duration:3s;/*动画时间*/
+  animation-iteration-count:infinite;/*动画无限循环*/
+  animation-timing-function:linear;/*动画类型*/
+  }
+  .disk-step3{opacity:0;left:78px;top:69px;z-index:8;
+   animation-name:Disk3;  /*动画名*/
+  animation-duration:3s;/*动画时间*/
+  animation-iteration-count:infinite;/*动画无限循环*/
+  animation-timing-function:linear;/*动画类型*/}
+
+
+</style>
+</head>
+<body>
+  <div class="icoBox">
+     <img class="disk-step disk-step1" src="images/data-step.png" alt="">
+     <img class="disk-step disk-step2" src="images/data-step.png" alt="">
+     <img class="disk-step disk-step3" src="images/data-step.png" alt="">
+
+  </div>
+  <div class="light"><a href="../index.html" class="light-a">首页</a></div>
+</body>
+</html>

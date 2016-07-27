@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/light.css">
+</head>
+<body>
+	<input type="text" class="str1">
+	<input type="text" class="str2">
+	<input type="text" class="str3">
+	<input type="text" class="str4">
+	<input type="button" value="计算" class="btn">
+	<!-- 呼吸灯 -->
+	<div class="light"><a href="../index.html" class="light-a">首页</a></div>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(".btn").click(function(){
+			var str1 = Number($(".str1").val());
+			var sign = $(".str2").val();
+			var str3 = Number($(".str3").val());
+			var result = "";
+
+			if(sign == "+"){
+				result = str1 + str3;
+			}
+			else if(sign == "-"){
+				result = str1 - str3;
+			}
+			else if(sign == "*"){
+				result = str1 * str3;
+			}
+			else if(sign == "/"){
+				result = str1 / str3;
+			}
+			$(".str4").val(result);
+		})
+	</script>
+</body>
+</html>

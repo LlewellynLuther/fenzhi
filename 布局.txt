@@ -1,0 +1,54 @@
+字幕，nav链接页面位置，整体色调，导航按钮滚动后显示
+背景效果，半透明黑格和文字
+差返回按钮，font-face
+interval间隔，消音按钮
+===========================
+
+	top>top-inner>nav+adjacency-nav+canvas.snow
+interval
+	main>main-inner>opus>div*9
+		notes>div*3
+		instance>ball+animate+photo-wall+piano
+interval间隔，背景与冲两边三角花纹一个颜色，有其他颜色滑块滑过时就会显示出来
+	footer>footer-inner>translated+social contact (font-face)
+
+
+视频
+背景音乐
+
+导航
+	1.nav  超过一屏后出现  如例子是上翻型
+	2.跟随导航，超过一页自动出现
+	返回顶部箭头
+!字幕，nav链接页面位置，整体色调，导航按钮滚动后显示
+
+x作品展示-opus
+	九个作品，鼠标滑过放大功能，上面标题，下面是说明
+	hover图放大格子不变，里面出现字
+	说明文字有滑块一直滑过
+	出现文字是末尾下面那个的效果
+!背景效果，半透明黑格和文字	
+
+x笔记展示-notes	（用列表）
+	js所有
+
+	github指令
+	html（韩）
+!动画效果
+	
+x示例展示-instance
+	-canvas的球
+	三次显示动画
+	x音乐播放器
+	-照片墙
+	-钢琴
+	会动的机器猫
+	-图片轮播
+!差返回按钮，font-face
+	
+技术支持
+	网页点击次数
+	canvas冒泡
+	雪碧
+	时钟
+	按钮&间隔  用E:\UIproject3-26\1\1HanTing\实例\#笔记201605 - 副本\#css3 demo#关键帧动画-fadeIn.html

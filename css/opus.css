@@ -1,0 +1,54 @@
+@keyframes toCir{
+
+  0%{background-color: rgba(205, 127, 50, 0.5);border-radius:none;}
+
+  50%{background-color: rgba(193, 210, 240, 0.8);border-radius:300px;}
+
+  100%{background-color: rgba(255, 255, 255, 0.5);border-radius:none;}
+
+}
+.opus{
+
+	}
+	.opus a{
+    text-decoration: none;
+    color: #000;
+	animation:toCir 3s linear infinite;
+    -webkit-animation:toCir 3s linear infinite;
+    
+	}
+	.opus span{
+   	text-align: center;
+   	display: block;
+	line-height: 50px;
+    
+	}
+	.opus-box h4{
+		text-align: center;
+		line-height: 50px;
+	}
+	.opus-box{
+		width: 33%;
+		float: left;
+		border:1px solid red;
+		background-color: red;
+		animation:toCir 3s linear infinite;
+    	-webkit-animation:toCir 3s linear infinite;
+		}
+	.opus-box .opus-cross{
+		overflow: hidden;
+		width: 80%;
+		height: 200px;
+		margin: 0 auto;
+		border-bottom: 10px;
+	}
+	.opus-box img{
+		width: 100%;
+
+	}
+	.opus-box img:hover{
+		width: 160%;
+		margin-top: -30%;
+		margin-left: -30%;
+		border:1px solid blue;
+	}
